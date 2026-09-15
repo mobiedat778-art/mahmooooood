@@ -6,7 +6,7 @@
 /*   By: mobaidat <mobaidat@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/07 09:01:13 by mobaidat          #+#    #+#             */
-/*   Updated: 2026/09/12 16:11:11 by mobaidat         ###   ########.fr       */
+/*   Updated: 2026/09/14 09:44:29 by mobaidat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,4 +40,6 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size);
 void	*ft_calloc(size_t n, size_t size);
 char	*ft_strdup(const char *s);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_strtrim(char const *s1, char const *set);
+char	*ft_itoa(int n);
 #endif
