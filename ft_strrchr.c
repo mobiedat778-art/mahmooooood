@@ -6,7 +6,7 @@
 /*   By: mobaidat <mobaidat@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/08 13:13:08 by mobaidat          #+#    #+#             */
-/*   Updated: 2026/09/08 16:38:48 by mobaidat         ###   ########.fr       */
+/*   Updated: 2026/09/22 14:22:28 by mobaidat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,14 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	char	*last;
-	int		i;
+	int	i;
 
-	i = 0;
-	last = NULL;
-	while (s[i])
+	i = ft_strlen(s);
+	while (i > -1)
 	{
 		if (s[i] == (char)c)
-			last = (char *)&s[i];
-		i++;
+			return ((char *)&s[i]);
+		i--;
 	}
-	if (s[i] == (char)c)
-		return ((char *)&s[i]);
-	return (last);
+	return (NULL);
 }
