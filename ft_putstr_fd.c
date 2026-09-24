@@ -6,7 +6,7 @@
 /*   By: mobaidat <mobaidat@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/15 14:25:02 by mobaidat          #+#    #+#             */
-/*   Updated: 2026/09/15 14:58:09 by mobaidat         ###   ########.fr       */
+/*   Updated: 2026/09/24 18:24:28 by mobaidat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	return ;
+	if (!s)
+		return ;
 	while (*s)
 	{
 		write (fd, s, 1);

@@ -6,7 +6,7 @@
 /*   By: mobaidat <mobaidat@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/20 08:33:27 by mobaidat          #+#    #+#             */
-/*   Updated: 2026/09/20 11:51:24 by mobaidat         ###   ########.fr       */
+/*   Updated: 2026/09/24 19:14:07 by mobaidat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*new;
 	void	*content;
 
+	if (!lst || !f || !del)
+		return (NULL);
 	head = NULL;
 	while (lst)
 	{
@@ -34,18 +36,3 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	}
 	return (head);
 }
-/*
-void *fun(void * content)
-{
-	char	*new;
-
-	new = malloc(sizeof(char));
-	if (!new)
-		return (NULL);
-	*new = *(char *)content + 32;
-	return (new);
-}
-void delete (void *content)
-{
-	free(content);
-}*/

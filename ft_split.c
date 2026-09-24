@@ -6,15 +6,15 @@
 /*   By: mobaidat <mobaidat@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/16 10:42:16 by mobaidat          #+#    #+#             */
-/*   Updated: 2026/09/17 12:08:28 by mobaidat         ###   ########.fr       */
+/*   Updated: 2026/09/24 19:29:53 by mobaidat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static size_t	count_word(char const *s, char c)
+static int	count_word(char const *s, char c)
 {
-	size_t	count;
+	int	count;
 
 	count = 0;
 	while (*s)
@@ -89,7 +89,7 @@ static void	fill_arr(char **arr, char const *s, char c, int count)
 
 char	**ft_split(char const *s, char c)
 {
-	size_t	count;
+	int		count;
 	char	**arr;
 
 	if (!s)
