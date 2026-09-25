@@ -1,4 +1,4 @@
-*This project has been created as part of the 42 curriculum by mobaidat.*
+*This activity has been created as part of the 42 curriculum by mobaidat.*
 
 # Libft
 
@@ -6,9 +6,9 @@
 
 Libft is my first C library project at 42.
 
-The goal of this project is to create a personal static library by reimplementing several standard C library functions and developing additional utility functions.
+The goal of this activity is to create a personal static library by reimplementing several standard C library functions and developing additional utility functions.
 
-The project helped me understand and practice important C concepts such as:
+The activity helped me understand and practice important C concepts such as:
 
 - Memory management
 - Pointers and pointer arithmetic
@@ -20,13 +20,13 @@ The project helped me understand and practice important C concepts such as:
 - Static libraries
 - Makefiles
 
-The resulting library is called:
+The resulting static library is called:
 
 ```text
 libft.a
 ```
 
-It can be reused in future C projects.
+It can be reused in future C activities.
 
 ---
 
@@ -101,9 +101,9 @@ ft_putnbr_fd
 
 ---
 
-## Bonus - Linked Lists
+### Part 3 - Linked List Functions
 
-The bonus part introduces singly linked lists using the following structure:
+This part introduces singly linked lists using the following structure:
 
 ```c
 typedef struct s_list
@@ -113,7 +113,7 @@ typedef struct s_list
 }   t_list;
 ```
 
-The following functions are implemented:
+The following linked list functions are implemented:
 
 ```text
 ft_lstnew
@@ -131,9 +131,11 @@ These functions allow the creation, traversal, modification, deletion, and mappi
 
 ---
 
-## Compilation
+## Instructions
 
-The project is compiled using:
+### Compilation
+
+The source files are compiled using:
 
 ```bash
 cc
@@ -145,47 +147,35 @@ with the required compiler flags:
 -Wall -Wextra -Werror
 ```
 
-To compile the mandatory part:
+To compile the library:
 
 ```bash
 make
 ```
 
-This creates the static library:
+This compiles the source files into object files and creates the static library:
 
 ```text
 libft.a
 ```
 
-To compile the bonus functions:
-
-```bash
-make bonus
-```
-
----
-
-## Makefile
+### Makefile Rules
 
 The Makefile provides the following rules:
 
-### `make`
+#### `make` / `make all`
 
-Compiles the mandatory source files and creates `libft.a`.
+Compiles the source files and creates `libft.a`.
 
-### `make bonus`
-
-Compiles the bonus linked-list functions and adds them to `libft.a`.
-
-### `make clean`
+#### `make clean`
 
 Removes the object files (`.o`).
 
-### `make fclean`
+#### `make fclean`
 
 Removes the object files and `libft.a`.
 
-### `make re`
+#### `make re`
 
 Runs `fclean` and recompiles the library.
 
@@ -211,16 +201,11 @@ int main(void)
 }
 ```
 
-Compile the program and link it with `libft.a`:
+Compile the program with the library:
 
 ```bash
-cc -Wall -Wextra -Werror main.c -L. -lft -o program
+cc -Wall -Wextra -Werror main.c libft.a -o program
 ```
-
-Here:
-
-- `-L.` tells the linker to search for libraries in the current directory.
-- `-lft` links the program with `libft.a`.
 
 Then run:
 
@@ -240,13 +225,15 @@ libft/
 └── README.md
 ```
 
-The header file `libft.h` contains the function prototypes and the `t_list` structure used by the bonus functions.
+All submitted files are located at the root of the repository.
+
+The header file `libft.h` contains the function prototypes and the `t_list` structure used by the linked list functions.
 
 ---
 
 ## What I Learned
 
-Through this project, I practiced:
+Through this activity, I practiced:
 
 - Working directly with memory
 - Using `malloc` and `free`
@@ -264,7 +251,7 @@ Through this project, I practiced:
 
 ## Resources
 
-The main resources used while working on this project were:
+The main resources used while working on this activity were:
 
 - C manual pages (`man`)
 - 42 Libft subject
