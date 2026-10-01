@@ -6,7 +6,7 @@
 /*   By: mobaidat <mobaidat@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/29 13:21:19 by mobaidat          #+#    #+#             */
-/*   Updated: 2026/09/30 19:28:31 by mobaidat         ###   ########.fr       */
+/*   Updated: 2026/10/01 14:07:51 by mobaidat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,6 @@ int	ft_putnbr(int n);
 int	ft_putunsigned(unsigned int n);
 int	ft_putlower(unsigned int n);
 int	ft_putupper(unsigned int n);
+int	ft_printf(const char *s, ...);
 
 #endif

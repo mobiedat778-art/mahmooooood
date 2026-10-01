@@ -27,11 +27,11 @@ int	ft_putupper(unsigned int n)
 	return (count);
 }
 /*#include "stdio.h"
-int     main(void)
+int	main(void)
 {
-        int     x;
+		int     x;
 
-        x = 42;
-        printf("%d\n", x);
-        ft_putupper(x);
+		x = 42;
+		printf("%d\n", x);
+		ft_putupper(x);
 }*/
