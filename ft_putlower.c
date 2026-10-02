@@ -6,7 +6,7 @@
 /*   By: mobaidat <mobaidat@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/30 18:05:20 by mobaidat          #+#    #+#             */
-/*   Updated: 2026/09/30 19:27:57 by mobaidat         ###   ########.fr       */
+/*   Updated: 2026/10/02 20:58:26 by mobaidat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,14 +26,3 @@ int	ft_putlower(unsigned int n)
 	count += ft_putchar(hexa[n % 16]);
 	return (count);
 }
-/*
-#include "stdio.h"
-
-int	main(void)
-{
-	int	x;
-
-	x = 42;
-	printf("%d\n", x);
-	ft_putlower(x);
-}*/

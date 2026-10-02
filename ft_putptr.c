@@ -6,7 +6,7 @@
 /*   By: mobaidat <mobaidat@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/30 12:36:20 by mobaidat          #+#    #+#             */
-/*   Updated: 2026/09/30 18:16:31 by mobaidat         ###   ########.fr       */
+/*   Updated: 2026/10/02 20:59:38 by mobaidat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,17 +42,3 @@ int	ft_putptr(void *ptr)
 	count += ft_putptr_hexa(address);
 	return (count);
 }
-/*
-#include "stdio.h"
-
-int	main(void)
-{
-	int		x;
-	void	*ptr;
-
-	x = 9;
-	ptr = &x;
-	printf("%p\n" , ptr);
-	ft_putptr(ptr);
-}
-*/

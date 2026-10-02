@@ -6,13 +6,13 @@
 /*   By: mobaidat <mobaidat@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/01 10:00:06 by mobaidat          #+#    #+#             */
-/*   Updated: 2026/10/01 17:15:07 by mobaidat         ###   ########.fr       */
+/*   Updated: 2026/10/02 23:24:12 by mobaidat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static int	ft_isconversion(char *s, char c)
+static int	ft_isconversion(const char *s, char c)
 {
 	while (*s)
 	{
